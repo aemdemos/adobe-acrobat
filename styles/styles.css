@@ -16,12 +16,18 @@
   --light-color: #f8f8f8;
   --dark-color: #505050;
   --text-color: #131313;
-  --link-color: #3b63fb;
+  --link-color: #0265dc;
   --link-hover-color: #1d3ecf;
+  --grey-color: #fafafa;
+  --light-grey-color: #4b4b4b;
+  --orange-color: #FB42370D;
+  --black-color: #000;
+  --font-family-adobe-clean: adobe-clean-regular,source sans pro,-apple-system,blinkmacsystemfont,segoe ui,roboto,sans-serif;
+  --head-font-family-adobe-clean: adobe-clean-bold,source sans pro,-apple-system,blinkmacsystemfont,segoe ui,roboto,sans-serif;
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback, sans-serif;
-  --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
+  --body-font-family: var(--font-family-adobe-clean), roboto-fallback, sans-serif;
+  --heading-font-family: var(--head-font-family-adobe-clean), roboto-condensed-fallback, sans-serif;
 
   /* body sizes */
   --body-font-size-m: 22px;
@@ -31,7 +37,7 @@
   /* heading sizes */
   --heading-font-size-xxl: 55px;
   --heading-font-size-xl: 44px;
-  --heading-font-size-l: 34px;
+  --heading-font-size-l: 28px;
   --heading-font-size-m: 27px;
   --heading-font-size-s: 24px;
   --heading-font-size-xs: 22px;
@@ -174,7 +180,7 @@ button {
   margin: 12px 0;
   border: 2px solid transparent;
   border-radius: 2.4em;
-  padding: 0.5em 1.2em;
+  padding: 0.3em 1em;
   font-family: var(--body-font-family);
   font-style: normal;
   font-weight: 500;
@@ -248,10 +254,47 @@ main > .section:first-of-type {
   }
 }
 
+main ul {
+  list-style: none;
+}
+
 /* section metadata */
 main .section.light,
 main .section.highlight {
   background-color: var(--light-color);
   margin: 0;
   padding: 40px 0;
+}
+
+main .section.orange-background {
+  background-color: var(--orange-color)
+}
+
+main .section.acrobat-background {
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-image: url("/icons/acrobat-orange.svg");
+}
+
+main .section.grey-background {
+  background-color: var(--grey-color);
+}
+
+main .section.large-padding {
+  padding: 72px 32px 89px;
+}
+
+main .section.center-align {
+  text-align: center;
+}
+
+main .section.no-margin-bottom {
+  margin-bottom: 0;
+}
+
+@media (width >= 768px) {
+  main .section.large-padding {
+    padding: 73px 136px 89px;
+  }
 }
