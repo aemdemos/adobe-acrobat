@@ -1,0 +1,19 @@
+.block.icon-list {
+  display: flex;
+  font-size: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0;
+}
+
+.block.icon-list > div {
+  border-radius: 2px;
+  min-width: 200px;
+  margin-top: 2rem;
+}
+
+.block.icon-list .icon {
+  height: 64px;
+  width: 64px;
+}
