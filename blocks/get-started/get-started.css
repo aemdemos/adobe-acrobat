@@ -1,0 +1,20 @@
+.block.get-started ul {
+  padding-left: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.block.get-started ul li {
+  text-align: start;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.block.get-started ul li .icon {
+  height: 18px;
+  width: 18px;
+}

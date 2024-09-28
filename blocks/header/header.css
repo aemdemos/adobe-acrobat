@@ -13,7 +13,7 @@ header .default-content-wrapper {
 .block.header {
   position: fixed;
   width: 100%;
-  background-color: white;
+  background-color: var(--background-color);
   z-index: 1000;
 }
 
@@ -28,20 +28,24 @@ header p {
   margin: 0;
   line-height: 1.5;
   font-weight: 700;
-  color: #4b4b4b;
+  color: var(--light-grey-color);
   font-family: var(--heading-font-family);
+}
+
+header a:any-link {
+  color: var(--light-grey-color)
 }
 
 header p:first-of-type a {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: #4b4b4b;
+  color: var(--light-grey-color);
   gap: 0.25rem;
 }
 
 header p:first-of-type a:hover {
-  color: #4b4b4b;
+  color: var(--light-grey-color);
   text-decoration: none;
 }
 
