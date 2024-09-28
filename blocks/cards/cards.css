@@ -31,7 +31,7 @@
 
 .cards > ul > li {
   border: 1px solid #dadada;
-  border-radius: 2px;
+  border-radius: 4px;
   background-color: var(--background-color);
   height: 200px;
   width: 270px;
@@ -54,7 +54,7 @@
 .block.cards a {
   background-color: white;
   color: black;
-  border-color: gray;
+  border-color: #b1b1b1;
 }
 
 .block.cards a:hover {
