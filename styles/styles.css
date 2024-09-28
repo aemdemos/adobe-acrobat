@@ -16,12 +16,15 @@
   --light-color: #f8f8f8;
   --dark-color: #505050;
   --text-color: #131313;
-  --link-color: #3b63fb;
+  --link-color: #0265dc;
   --link-hover-color: #1d3ecf;
+  --black-color: #000;
+  --font-family-adobe-clean: adobe-clean-regular,source sans pro,-apple-system,blinkmacsystemfont,segoe ui,roboto,sans-serif;
+  --head-font-family-adobe-clean: adobe-clean-bold,source sans pro,-apple-system,blinkmacsystemfont,segoe ui,roboto,sans-serif;
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback, sans-serif;
-  --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
+  --body-font-family: var(--font-family-adobe-clean), roboto-fallback, sans-serif;
+  --heading-font-family: var(--head-font-family-adobe-clean), roboto-condensed-fallback, sans-serif;
 
   /* body sizes */
   --body-font-size-m: 22px;
@@ -248,10 +251,32 @@ main > .section:first-of-type {
   }
 }
 
+main ul {
+  list-style: none;
+}
+
 /* section metadata */
 main .section.light,
 main .section.highlight {
   background-color: var(--light-color);
   margin: 0;
   padding: 40px 0;
+}
+
+main .section.orange-background {
+  background-color: #FB42370D;
+  padding: 73px 136px 89px;
+}
+
+main .section.orange-background .icon.icon-acrobat-orange {
+  height: unset;
+  width: unset;
+}
+
+main .section.center-align {
+  text-align: center !important;
+}
+
+main .section.no-margin-bottom {
+  margin-bottom: 0 !important;
 }
