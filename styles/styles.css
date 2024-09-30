@@ -293,6 +293,10 @@ main .section.no-margin-bottom {
   margin-bottom: 0;
 }
 
+main > .section.expanded  > div {
+  max-width: 100%;
+}
+
 @media (width >= 768px) {
   main .section.large-padding {
     padding: 73px 136px 89px;
